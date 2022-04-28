@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,14 @@
     <title>Health Plus</title>
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
-        body{
+
+        body {
             margin: 0;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: hsl(191, 37%, 85%);
 
         }
 
@@ -21,16 +24,65 @@
             margin: 0 auto;
         }
 
+        #About-us {
+            width: 85%;
+            margin-top: 40px;
+            display: flex
+        }
 
-        nav {
+        .About-us_content {
+            margin: 10px;
+
+        }
+
+        #AboutUsContent {
+            padding-top: 60px;
+            font-size: 90px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #4167d9;
+        }
+
+        .AboutUsContent1 {
+            font-size: 25px;
+            word-break: keep-all;
+            width: 500px;
+            color: #120897;
+            margin-left: 280px;
+            margin-top: -30px;
+        }
+
+        #Contact {
+            padding-top: 60px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+            margin-top: 170px;
+            font-size: 60px;
+            color: #0a2e97;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .contactcontainer {
+            
             display: flex;
             justify-content: space-between;
-            padding: 20px 0;
+            padding-top: 20px;
         }
+
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 03px;
+            position: fixed;
+            background-color: white;
+        }
+
         nav img {
-            padding-right: 120px;
+            padding-right: 10px;
             height: 4rem;
         }
+
         nav ul {
             display: flex;
             list-style-type: none;
@@ -40,9 +92,10 @@
         }
 
         nav li {
-            margin-left: 40px;
+            margin-left: 100px;
 
         }
+
         nav li a {
             color: rgb(6, 87, 187);
             text-transform: uppercase;
@@ -54,11 +107,12 @@
             height: 720px;
             background-color: hsl(191, 37%, 85%);
         }
+
         main img {
             height: 700px;
             width: 600px;
             box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
             border-radius: 30px;
         }
 
@@ -72,7 +126,7 @@
         .pageContent {
             margin: 100px 0;
             box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
             border-radius: 30px;
 
         }
@@ -80,6 +134,7 @@
         .pageContent h1 {
             margin-top: 60px;
         }
+
         .pageContent p {
             margin: 50px 0;
             font-size: large;
@@ -87,70 +142,150 @@
 
         .doctorButton {
 
-            background-color:#2d6fe0;
-            border-radius:8px;
-            border:1px solid #4167d9;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:19px;
-            padding:16px 50px;
-            text-decoration:none;
+            background-color: #2d6fe0;
+            border-radius: 8px;
+            border: 1px solid #4167d9;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 19px;
+            padding: 16px 50px;
+            text-decoration: none;
         }
 
         .appointment {
-            background-color:#2d6fe0;
-            border-radius:8px;
-            border:1px solid #4167d9;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:19px;
-            padding:16px 30px;
-            text-decoration:none;
+            background-color: #2d6fe0;
+            border-radius: 8px;
+            border: 1px solid #4167d9;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 19px;
+            padding: 16px 30px;
+            text-decoration: none;
         }
 
+        .icon {
+            width: 140px;
+            height: 140px;
+            margin-left: 10px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            display: flex;
+        }
 
-</style>
+        .icon2 {
+            width: 70px;
+            height: 70px;
+        }
+
+        .icon3 {
+            color: #0f2a7a;
+            margin-left: 500px;
+            font-size: 50px;
+        }
+
+        .containercontact {
+            width: 85%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
-<div class="container">
+
     <nav>
-       <a href="/"><img src="/static/images/tinywow_remove_bg_1868557.png" alt="logo" /></a>
+
+        <a href="/"><img src="/static/images/tinywow_remove_bg_1868557.png" alt="logo" /></a>
+        <div class="container"></div>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#AboutUsContent">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+                <div class="search-container">
+                    <form action="searchResults.html">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </li>
         </ul>
+
     </nav>
-</div>
-
-<main>
-    <div class="container">
-        <div class="pageContainer">
-            <div class="pageContent">
-                <h1>
-                    Making Health <br />
-                    Care Better Together
-                </h1>
-                <p>
-                    Health Plus gives you the opportunity to access Health Care
-                    <br>at your finger tips. <br />
-                    Stop GOOGLING your symptoms, hear from a professional
-                    <br />
-                    Health Is Wealth or so they say
-                    <br />
-                    So stay Healthy to stay Wealthy
-                </p>
-                <a href="patientLogin" class="appointment">Make an Appointment</a>
-                <a href="doctorLogin" class="doctorButton">Doctor's Portal</a>
-            </div>
-
-            <img src="/static/images/tinywow_crop_1758752.jpg" alt="mockup" />
-        </div>
     </div>
-</main>
+
+
+    <main>
+        <div class="container">
+            <div class="pageContainer">
+                <div class="pageContent">
+                    <h1>
+                        Making Health Care<br />
+                        Better Together
+                    </h1>
+                    <p>
+                        Health Plus gives you the opportunity to access Health Care
+                        <br>at your finger tips. <br />
+                        Stop GOOGLING your symptoms, hear from a professional
+                        <br />
+                        Health Is Wealth or so they say
+                        <br />
+                        So stay Healthy to stay Wealthy
+                    </p>
+                    <a href="patientLogin" class="appointment">Make an Appointment
+                        <i class="fas fa-user-circle"></i></a>
+                    <a href="doctorLogin" class="doctorButton">Doctor's Portal</a>
+                </div>
+
+                <img src="/static/images/tinywow_crop_1758752.jpg" alt="mockup" />
+            </div>
+        </div>
+
+    </main>
+
+    <div id="About-us">
+        <div class="About-us_content">
+
+            <p id="AboutUsContent">
+                Health Plus
+                Is Designed to Make </br>
+                Your Life Better...
+            </p>
+            <p class="AboutUsContent1">
+                We are founded on the inspiration that everyone must have access to Healthcare 24/7
+
+                Our founder and Senior Cardiologist Mr Omwokpokpokpokpo, had the inspiration that
+                lives could be saved and potentially life-changing illness checked if access to
+                reliable Healthcare is made available at the speed of thinking.
+
+                Health Is Wealth or so they say
+
+                So stay Healthy to stay Wealthy
+            </p>
+        </div>
+
+        <img src="/static/images/Doctor.jpeg" style="z-index:-3 ; height: 300px; width:420px; margin-top: 520px;"
+            alt="mockup">
+
+    </div>
+    <div class="containercontact">
+    <div class="contactcontainer">
+        <div id="Contact">
+            <p>Contact </p>
+            <span> Address</span><br>
+            <span style="font-size:30px; color: #ffffff;">Decagon, Edo, Nigeria</span><br><br>
+            <div class=" icon">
+                <a href="#"><img src="/static/images/twitter.png" alt="mockup" class="icon2"></a>
+                <a style="margin-left:50px ;" href="#"><img src="/static/images/instagram.png" alt="mockup" class="icon2"></a>
+                <a style="margin-left:80px ;"href="#"><img src="/static/images/facebook.png" alt="mockup" class="icon2"></a>
+            </div>
+        </div>
+        <img src="/static/images/background.jpg" style="width:580px;height:450px;margin-top: 400px;" alt="mockup"/>
+    </div>
+</div>
 </body>
+
 </html>

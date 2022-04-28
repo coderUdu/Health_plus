@@ -28,6 +28,7 @@ func SetupRouter() {
   	router.HandleFunc("/doctorDashboard", handlers.DoctorHomeHandler).Methods("GET")
 	router.HandleFunc("/patientDashboard", handlers.PatientHomeHandler).Methods("GET")
 	router.HandleFunc("/patientLogout", handlers.PatientLogoutHandler).Methods("GET")
+	
 
 	fs := http.FileServer(http.Dir("./pages/static/"))
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", fs))
